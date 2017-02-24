@@ -2,9 +2,6 @@ var gulp = require('gulp');
 var shell = require('gulp-shell');
 var task = require('shell-task');
 
-
-gulp.task('default', ['buildGitbook, uploadHeroku']);
-
 gulp.task('buildGitbook',  function() {
     return gulp.src('').pipe(shell([
       'npm install',

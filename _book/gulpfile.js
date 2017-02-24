@@ -4,9 +4,8 @@ var task = require('shell-task');
 
 gulp.task('buildGitbook',  function() {
     return gulp.src('').pipe(shell([
-      'git add .',
-      'git commit -m "Autocommit deplot gitbook"',
-      'git push heroku master'
+      'npm install',
+      'gitbook build'
   ]));
 });
 
